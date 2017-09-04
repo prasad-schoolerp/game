@@ -1,76 +1,248 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
-    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/custom-style.css" rel="stylesheet">
-</head>
-<body>
+	<head>
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="css/custom-style.css" rel="stylesheet"/>
+	</head>
+	<body>
+	<div ng-app="myApp" ng-controller="myCtrl">
+		<div ng-controller="CollapseDemoCtrl">
+			<nav class="navbar navbar-default" role="navigation" id="navigation">
+				<div class="navbar-header">
+					
+					<button type="button" class="navbar-toggle" ng-click="isNavCollapsed = !isNavCollapsed">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					 <form  role="search" action="#" method="get" class="hidden-sm hidden-lg hidden-md">
+	                    <button class="btn btn-link pull-right" class="navbar-toggle" type="button" id="icon-search" ng-click="isNavCollapsed2 = !isNavCollapsed2">
+							<span class="glyphicon glyphicon-search"></span>
+							
+					    </button>
 
-<div ng-app="myApp" ng-controller="myCtrl">
-<div ng-controller="CollapseDemoCtrl">
-  <div >
-    
-  </div>
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" ng-click="isNavCollapsed = !isNavCollapsed">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Playkers</a>
+                	</form>
+					<a class="navbar-brand" href="#"><img src="img/nav-logo.png" alt="Playkers"></a>
+				</div>
+				<div class="hidden-sm hidden-lg hidden-md">
+					<div class="collapse navbar-collapse" uib-collapse="isNavCollapsed2">
+					<input type="text" class="  search-query form-control" placeholder="Search" />
+				</div>
+				</div>
+				<div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="hidden-xs">
+							<div id="custom-search-input" >
+								<div class="input-group col-md-12">
+								<input type="text" class="  search-query form-control" placeholder="Search" />
+								<span class="input-group-btn">
+								<button class="btn btn-danger" type="button">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+								</span>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">SIGN IN</a></li>
+						<li><a href="#">SIGN UP</a></li>
+						<li><a href="#">HELP</a></li>
+					</ul>
+				</div>
+			</nav>
 		</div>
-		<div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
-			<ul class="nav navbar-nav">
-				<li><a href="#">SIGN IN</a></li>
-				<li><a href="#">SIGN UP</a></li>
-        <li><a href="#">HEPL</a></li>
-			</ul>
+		<div ng-controller="DropdownCtrl" id="DropdownCtrl">
+			<div class="col-sm-12 bb-style hidden-xs">
+				<ul class = "list-inline">
+				    <li>
+					    <span uib-dropdown on-toggle="toggled(open)">
+					      <a href id="simple-dropdown" uib-dropdown-toggle>
+					       <span class="glyphicon glyphicon-map-marker"></span> Tel Aviv -Yafo, Israel 
+					       <span class="glyphicon glyphicon-chevron-down"></span>
+					      </a>
+					      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
+					        <li ng-repeat="choice in items">
+					          <a href>{{choice}}</a>
+					        </li>
+					      </ul>
+					    </span>
+			       </li>
+				   <li> 
+					   	<span uib-dropdown on-toggle="toggled(open)">
+					      <a href id="simple-dropdown" uib-dropdown-toggle>
+					       <span class="glyphicon glyphicon-calendar"></span> 17 May 2017  
+					       <span class="glyphicon glyphicon-chevron-down"></span>
+					      </a>
+					      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
+					        <li ng-repeat="choice in items">
+					          <a href>{{choice}}</a>
+					        </li>
+					      </ul>
+					    </span>
+				    </li>
+				   <li>
+				   		<span uib-dropdown on-toggle="toggled(open)">
+					      <a href id="simple-dropdown" uib-dropdown-toggle>
+					       <span class="glyphicon glyphicon-ok-sign"></span> Soccer  
+					       <span class="glyphicon glyphicon-chevron-down"></span>
+					      </a>
+					      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
+					        <li ng-repeat="choice in items">
+					          <a href>{{choice}}</a>
+					        </li>
+					      </ul>
+					    </span>
+				   </li>
+				   <li>
+				   		<span uib-dropdown on-toggle="toggled(open)">
+					      <a href id="simple-dropdown" uib-dropdown-toggle>
+					       <span class="glyphicon glyphicon-leaf"></span> Grass  
+					       <span class="glyphicon glyphicon-chevron-down"></span>
+					      </a>
+					      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
+					        <li ng-repeat="choice in items">
+					          <a href>{{choice}}</a>
+					        </li>
+					      </ul>
+					    </span>
+				   </li>
+				    <li>
+				   		<span uib-dropdown on-toggle="toggled(open)">
+					      <a href id="simple-dropdown" uib-dropdown-toggle>
+					       <span class="glyphicon glyphicon-user"></span> 7 x 7  
+					       <span class="glyphicon glyphicon-chevron-down"></span>
+					      </a>
+					      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
+					        <li ng-repeat="choice in items">
+					          <a href>{{choice}}</a>
+					        </li>
+					      </ul>
+					    </span>
+				   </li>
+				    <li>
+				   		<span uib-dropdown on-toggle="toggled(open)">
+					      <a href id="simple-dropdown" uib-dropdown-toggle>
+					       <span class="glyphicon glyphicon-usd"></span> Up to 30$
+					       <span class="glyphicon glyphicon-chevron-down"></span>
+					      </a>
+					      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
+					        <li ng-repeat="choice in items">
+					          <a href>{{choice}}</a>
+					        </li>
+					      </ul>
+					    </span>
+				   </li>
+				</ul>
+				
+			</div>
 		</div>
-	</nav>
-	
-</div>
+		<div ng-controller="ExampleController">
+			<div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+				<!--<google-map
+					center="centerProperty"
+					zoom="zoomProperty" 
+					markers="markersProperty"
+					latitude="clickedLatitudeProperty"
+					longitude="clickedLongitudeProperty"
+					mark-click="true"
+					draggable="true"
+					style="height: 450px; width: 100%">
+				</google-map>-->
+			</div>
+			<div class="col-lg-8 col-sm-8 col-md-8 col-xs-8">
+				<!--<div ng-controller="CarouselDemoCtrl">
+				  <div style="height: 305px">
+				    <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+				      <uib-slide ng-repeat="slide in slides" active="slide.active">
+				        <img ng-src="{{slide.image}}" style="margin:auto;">
+				        <div class="carousel-caption">
+				          <h4>Slide {{$index}}</h4>
+				          <p>{{slide.text}}</p>
+				        </div>
+				      </uib-slide>
+				    </uib-carousel>
+				  </div>
+				</div>-->
+			</div>
+		</div><br /><br /><br />
+		<footer id="footer">
+			<div class='row'>
+				<div class='col-lg-12 col-sm-12 col-md-12 col-xs-12'>
+					<div class='nadi-graph-h1'>
+						<div class='pull-left'><h5>Copyright / All Rights Reserved / Playkers 2017</h5></div>
+						<div class='pull-right'><a href="#"><img src="img/facebook-icon.png" width="30" /></a><a href="#"><img src="img/Twitter-icon.png" width="30" /></a></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!--<script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>-->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+	<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
+	<!--<script src="js/map.js"></script>-->
+	<script>
+		var app = angular.module('myApp', ['ui.bootstrap']);
+		app.controller('myCtrl', function($scope) {
+		$scope.firstName = "John";
+		$scope.lastName = "Doe";
+		});
+		app.controller('CollapseDemoCtrl', function ($scope) {
+		$scope.isNavCollapsed = true;
+		$scope.isNavCollapsed2 = true;
+		});
+		app.controller('DropdownCtrl', function ($scope, $log) {
+		  $scope.items = [
+		    'The first choice!',
+		    'And another choice for you.',
+		    'but wait! A third!'
+		  ];
 
+		  $scope.status = {
+		    isopen: false
+		  };
 
+		  $scope.toggled = function(open) {
+		    $log.log('Dropdown is now: ', open);
+		  };
 
-    <div class="btn-group" uib-dropdown is-open="status.isopen">
-      <button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
-        Button dropdown <span class="caret"></span>
-      </button>
-      <ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
-        <li role="menuitem"><a href="#">Action</a></li>
-        <li role="menuitem"><a href="#">Another action</a></li>
-        <li role="menuitem"><a href="#">Something else here</a></li>
-        <li class="divider"></li>
-        <li role="menuitem"><a href="#">Separated link</a></li>
-      </ul>
-    </div>
-	
-	<h3>Static</h3>
-    <div class="row">
-        <div class="col-sm-4"><uib-progressbar value="55"></uib-progressbar></div>
-        <div class="col-sm-4"><uib-progressbar class="progress-striped" value="22" type="warning">22%</uib-progressbar></div>
-        <div class="col-sm-4"><uib-progressbar class="progress-striped active" max="200" value="166" type="danger"><i>166 / 200</i></uib-progressbar></div>
-    </div>
-
-</div>
-
-<script>
-var app = angular.module('myApp', ['ui.bootstrap']);
-app.controller('myCtrl', function($scope) {
-    $scope.firstName = "John";
-    $scope.lastName = "Doe";
-});
-angular.module('ui.bootstrap.demo').controller('CollapseDemoCtrl', function ($scope) {
-  $scope.isNavCollapsed = true;
-  $scope.isCollapsed = false;
-  $scope.isCollapsedHorizontal = false;
-});
-</script>
-
-</body>
+		  $scope.toggleDropdown = function($event) {
+		    $event.preventDefault();
+		    $event.stopPropagation();
+		    $scope.status.isopen = !$scope.status.isopen;
+		  };
+		});
+		app.controller('CarouselDemoCtrl', function ($scope) {
+		  $scope.myInterval = 5000;
+		  $scope.noWrapSlides = false;
+		  var slides = $scope.slides = [];
+		  $scope.addSlide = function() {
+		    var newWidth = 600 + slides.length + 1;
+		    slides.push({
+		      image: '//placekitten.com/' + newWidth + '/300',
+		      text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
+		        ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
+		    });
+		  };
+		  for (var i=0; i<4; i++) {
+		    $scope.addSlide();
+		  }
+		});
+	/*function ExampleController ($scope) {
+		angular.extend($scope, {
+			centerProperty: {
+				lat: 45,
+				lng: -73
+			},
+			zoomProperty: 8,
+			markersProperty: [ {
+					latitude: 45,
+					longitude: -74
+				}],
+			clickedLatitudeProperty: null,	
+			clickedLongitudeProperty: null,
+		});
+	}*/
+	</script>
+	</body>
 </html>
