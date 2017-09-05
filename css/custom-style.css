@@ -1,12 +1,11 @@
-.bb-style {
-	-webkit-box-shadow: -2px 29px 50px -25px rgba(0,0,0,0.75);
-	-moz-box-shadow: -2px 29px 50px -25px rgba(0,0,0,0.75);
-	box-shadow: -2px 29px 50px -25px rgba(0,0,0,0.75);
-}
+
 #DropdownCtrl a{
 	color:gray !important;
 }
-
+#DropdownCtrl {
+	/*box-shadow: 0 5px 5px -5px #333;*/
+	box-shadow: 0 5px 9px rgba(0,0,0,0.1);
+}
 #DropdownCtrl span{
 	color:black !important;
 }
@@ -104,6 +103,15 @@ input[type="text"] {
   background-color : #CCE9F9;
 }
 
+.carousel-caption {
+        right: 0;
+        bottom: 0;
+        text-align: right;
+        background-color: black;
+        left: auto;
+        padding:2px 5px 2px 5px;
+ }
+
 /* Extra Small */
 @media(max-width:767px){
 	.navbar-default .navbar-nav > li > a {
@@ -133,8 +141,26 @@ input[type="text"] {
 #footer h5{
 	color: #fff;
 	font-weight: 300;
-	margin-left: 15px;
 }
-#footer a{
-	margin-right: 15px;
+
+/*Rating Star*/
+
+.rating {
+    color: #a9a9a9;
+    margin: 0;
+    padding: 0;
+}
+ul.rating {
+    display: inline-block;
+}
+.rating li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 1px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.rating .filled {
+    color: red;
 }
