@@ -55,7 +55,7 @@
         </div>
       </nav>
     </div>
-    <div ng-controller="DropdownCtrl" id="DropdownCtrl">
+    <div id="DropdownCtrl">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12 visible-xs visible-sm">
@@ -68,83 +68,68 @@
             <div class="height20"></div>
           </div>
           <ul class="list-inline hidden-xs">
-            <li>
-              <span uib-dropdown on-toggle="toggled(open)">
-					      <a href id="simple-dropdown" uib-dropdown-toggle>
-					       <span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;Tel Aviv -Yafo, Israel&nbsp;&nbsp;
-              <span class="glyphicon glyphicon-menu-down"></span>
-              </a>
-              <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
-                <li ng-repeat="choice in items">
-                  <a href>{{choice}}</a>
-                </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;Tel Aviv -Yafo, Israel&nbsp;&nbsp;
+               <span class="glyphicon glyphicon-menu-down"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">The first choice!</a></li>
+                <li><a href="#">And another choice for you.</a></li>
+                <li><a href="#">but wait! A third!</a></li>
               </ul>
-              </span>
             </li>
-            <li>
-              <span uib-dropdown on-toggle="toggled(open)">
-					      <a href id="simple-dropdown" uib-dropdown-toggle>
-					       <span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;17 May 2017&nbsp;&nbsp;
-              <span class="glyphicon glyphicon-menu-down"></span>
-              </a>
-              <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
-                <li ng-repeat="choice in items">
-                  <a href>{{choice}}</a>
-                </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;17 May 2017&nbsp;&nbsp;
+              <span class="glyphicon glyphicon-menu-down"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">The first choice!</a></li>
+                <li><a href="#">And another choice for you.</a></li>
+                <li><a href="#">but wait! A third!</a></li>
               </ul>
-              </span>
             </li>
-            <li>
-              <span uib-dropdown on-toggle="toggled(open)">
-					      <a href id="simple-dropdown" uib-dropdown-toggle>
-					       <span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;Soccer&nbsp;&nbsp;
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                 <span class="glyphicon glyphicon-ok-sign"></span>&nbsp;&nbsp;Soccer&nbsp;&nbsp;
               <span class="glyphicon glyphicon-menu-down"></span>
               </a>
-              <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
-                <li ng-repeat="choice in items">
-                  <a href>{{choice}}</a>
-                </li>
+              <ul class="dropdown-menu">
+                <li><a href="#">The first choice!</a></li>
+                <li><a href="#">And another choice for you.</a></li>
+                <li><a href="#">but wait! A third!</a></li>
               </ul>
-              </span>
             </li>
-            <li>
-              <span uib-dropdown on-toggle="toggled(open)">
-					      <a href id="simple-dropdown" uib-dropdown-toggle>
-					       <span class="glyphicon glyphicon-leaf"></span>&nbsp;&nbsp;Grass&nbsp;&nbsp;
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                 <span class="glyphicon glyphicon-leaf"></span>&nbsp;&nbsp;Grass&nbsp;&nbsp;
               <span class="glyphicon glyphicon-menu-down"></span>
               </a>
-              <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
-                <li ng-repeat="choice in items">
-                  <a href>{{choice}}</a>
-                </li>
+              <ul class="dropdown-menu">
+                <li><a href="#">The first choice!</a></li>
+                <li><a href="#">And another choice for you.</a></li>
+                <li><a href="#">but wait! A third!</a></li>
               </ul>
-              </span>
             </li>
-            <li>
-              <span uib-dropdown on-toggle="toggled(open)">
-					      <a href id="simple-dropdown" uib-dropdown-toggle>
-					       <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;7 x 7&nbsp;&nbsp;
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;7 x 7&nbsp;&nbsp;
               <span class="glyphicon glyphicon-menu-down"></span>
               </a>
-              <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
-                <li ng-repeat="choice in items">
-                  <a href>{{choice}}</a>
-                </li>
+              <ul class="dropdown-menu">
+                <li><a href="#">The first choice!</a></li>
+                <li><a href="#">And another choice for you.</a></li>
+                <li><a href="#">but wait! A third!</a></li>
               </ul>
-              </span>
             </li>
-            <li>
-              <span uib-dropdown on-toggle="toggled(open)">
-					      <a href id="simple-dropdown" uib-dropdown-toggle>
-					       <span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp;Up to 30$&nbsp;&nbsp;
+             <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp;Up to 30$&nbsp;&nbsp;
               <span class="glyphicon glyphicon-menu-down"></span>
               </a>
-              <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
-                <li ng-repeat="choice in items">
-                  <a href>{{choice}}</a>
-                </li>
+              <ul class="dropdown-menu">
+                <li><a href="#">The first choice!</a></li>
+                <li><a href="#">And another choice for you.</a></li>
+                <li><a href="#">but wait! A third!</a></li>
               </ul>
-              </span>
             </li>
           </ul><br/>
         </div>
@@ -590,27 +575,7 @@
       $scope.isNavCollapsed = true;
       $scope.isNavCollapsed2 = true;
     });
-    app.controller('DropdownCtrl', function ($scope, $log) {
-      $scope.items = [
-        'The first choice!',
-        'And another choice for you.',
-        'but wait! A third!'
-      ];
-
-      $scope.status = {
-        isopen: false
-      };
-
-      $scope.toggled = function (open) {
-        $log.log('Dropdown is now: ', open);
-      };
-
-      $scope.toggleDropdown = function ($event) {
-        $event.preventDefault();
-        $event.stopPropagation();
-        $scope.status.isopen = !$scope.status.isopen;
-      };
-    });
+   
     app.controller('CarouselDemoCtrl', function ($scope) {
 
       $scope.myInterval = 3000;
