@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,21 +32,21 @@
         </div>
 
         <div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
-          <div class="col-sm-offset-5 col-sm-3 col-md-3 hidden-xs">
-            <form class="navbar-form" role="search">
-              <div id="custom-search-input">
-                <div class="input-group">
-                  <input type="text" class="  search-query form-control" placeholder="Search" />
-                  <span class="input-group-btn">
-                        <button class="btn btn-danger" type="button">
-                          <span class="glyphicon glyphicon-search"></span>
-                  </button>
-                  </span>
+          <ul class="nav navbar-nav navbar-form navbar-right">
+            <li class="hidden-xs">
+              <form class="navbar-form" role="search">
+                <div id="custom-search-input">
+                  <div class="input-group">
+                    <input type="text" class="  search-query form-control" placeholder="Search" />
+                    <span class="input-group-btn">
+                      <button class="btn btn-danger" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                      </button>
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </form>
-          </div>
-          <ul class="nav navbar-nav navbar-right">
+              </form>
+            </li>
             <li><a href="#">SIGN IN</a></li>
             <li><a href="#">SIGN UP</a></li>
             <li><a href="#">HELP</a></li>
@@ -143,7 +142,7 @@
             <!--Map code Here-->
           </div>
           <div ng-controller="CarouselDemoCtrl">
-            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12"><br />
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div id="myCarousel1" class="carousel slide" data-ride="carousel">
                   <!-- Wrapper for slides -->
@@ -180,8 +179,8 @@
                   <span class="sr-only">Next</span>
                 </a>
                 </div>
-                <h5><b>Goal Time TLV</b></h5>
-                <span class="text-muted">Street Address 25/31 &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
+                <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
+                <span class="text-muted pull-left">Street Address 25/31 </span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
                 <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
@@ -224,8 +223,8 @@
                   <span class="sr-only">Next</span>
                 </a>
                 </div>
-                <h5><b>Goal Time TLV</b></h5>
-                <span class="text-muted">Street Address 25/31 &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
+                <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
+                <span class="text-muted pull-left">Street Address 25/31 </span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
                 <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
@@ -268,13 +267,13 @@
                   <span class="sr-only">Next</span>
                 </a>
                 </div>
-                <h5><b>Goal Time TLV</b></h5>
-                <span class="text-muted">Street Address 25/31 &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
+                <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
+                <span class="text-muted pull-left">Street Address 25/31</span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
                 <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
                   <div star-rating rating-value="rating.current" max="rating.max" ></div>
-              </span> <br />
+              </span> <br /><br />
               </div>
 
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -313,8 +312,8 @@
                   <span class="sr-only">Next</span>
                 </a>
                 </div>
-                <h5><b>Goal Time TLV</b></h5>
-                <span class="text-muted">Street Address 25/31 &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
+                <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
+                <span class="text-muted">Street Address 25/31 </span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
                 <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
@@ -357,8 +356,8 @@
                   <span class="sr-only">Next</span>
                 </a>
                 </div>
-                <h5><b>Goal Time TLV</b></h5>
-                <span class="text-muted">Street Address 25/31 &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
+                <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
+                <span class="text-muted pull-left">Street Address 25/31</span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
                 <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
@@ -401,13 +400,13 @@
                   <span class="sr-only">Next</span>
                 </a>
                 </div>
-                <h5><b>Goal Time TLV</b></h5>
-                <span class="text-muted">Street Address 25/31 &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
+                <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
+                <span class="text-muted">Street Address 25/31 </span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
                 <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
                   <div star-rating rating-value="rating.current" max="rating.max" ></div>
-              </span> <br />
+              </span> <br /><br />
               </div>
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div id="myCarousel4" class="carousel slide" data-ride="carousel">
@@ -445,8 +444,8 @@
                   <span class="sr-only">Next</span>
                 </a>
                 </div>
-                <h5><b>Goal Time TLV</b></h5>
-                <span class="text-muted">Street Address 25/31 &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
+                <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
+                <span class="text-muted">Street Address 25/31</span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
                 <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
@@ -489,8 +488,8 @@
                   <span class="sr-only">Next</span>
                 </a>
                 </div>
-                <h5><b>Goal Time TLV</b></h5>
-                <span class="text-muted">Street Address 25/31 &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
+                <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
+                <span class="text-muted">Street Address 25/31</span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
                 <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
                   <div star-rating rating-value="rating.current" max="rating.max" ></div>
@@ -531,8 +530,8 @@
                   <span class="sr-only">Next</span>
                 </a>
                 </div>
-                <h5><b>Goal Time TLV</b></h5>
-                <span class="text-muted">Street Address 25/31 &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
+                <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
+                <span class="text-muted">Street Address 25/31</span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
                 <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
@@ -545,7 +544,7 @@
         </div>
       </div>
     </div><br /><br /><br />
-    <footer id="footer">
+    <footer id="footer" class="footer">
       <div class="container-fluid">
         <div class='row'>
           <div class='col-lg-6 col-sm-6 col-md-6 col-xs-6'>

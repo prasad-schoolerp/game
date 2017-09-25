@@ -44,9 +44,7 @@
 	z-index: 1000;
 }
 
-.navbar-collapse.collapse {
-	padding-top: 10px;
-}
+
 
 .navbar-collapse .in .collapse {
 	background-color: #fff;
@@ -129,7 +127,9 @@
 .form-control::-moz-placeholder {
 	color: #0092E5;
 }
-
+ a:hover  {
+	text-decoration: none;
+}
 
 /* Mozilla Firefox 19+ */
 
@@ -167,6 +167,9 @@ input[type="text"] {
 	.navbar-default .navbar-nav>li>a {
 		color: #000;
 	}
+	.navbar-collapse.collapse {
+		padding-top: 10px;
+	}
 }
 
 
@@ -193,6 +196,42 @@ input[type="text"] {
 	font-weight: 300;
 }
 
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+	position: relative;
+	min-height: 100%;
+  }
+  body {
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+  }
+  .footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	
+	background-color: #f5f5f5;
+  }
+  
+  
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+  
+  body > .container {
+	padding: 60px 15px 0;
+  }
+  
+  .footer > .container {
+	padding-right: 15px;
+	padding-left: 15px;
+  }
+  
+  code {
+	font-size: 80%;
+  }
 
 /*Rating Star*/
 
