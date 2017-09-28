@@ -299,3 +299,26 @@ ul.rating {
 .height20{
 	height: 20px;
  }
+ .scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.li-bot-border{
+	margin:  15px;
+	
+	border-bottom: 1px solid #EBEAEA;
+}
+.dropdown-menu {
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.text-green {
+	color: green;
+}
+
+.text-blue {
+	color: #3362C4;
+}

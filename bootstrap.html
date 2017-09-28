@@ -71,9 +71,15 @@
               <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;Tel Aviv -Yafo, Israel&nbsp;&nbsp;
                <span class="glyphicon glyphicon-menu-down"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">The first choice!</a></li>
-                <li><a href="#">And another choice for you.</a></li>
-                <li><a href="#">but wait! A third!</a></li>
+                <li class="li-bot-border"><a href="#">Tel Aviv -Yafo, Israel</a></li>
+                <li class="li-bot-border"><a href="#">Tel Aviv -Yafo, Israel</a></li>
+                <li class="li-bot-border"><a href="#">Tel Aviv -Yafo, Israel</a></li>
+                <li class="li-bot-border"><a href="#">Tel Aviv -Yafo, Israel</a></li>
+                <li class="li-bot-border"><a href="#">Tel Aviv -Yafo, Israel</a></li>
+                <li class="li-bot-border"><a href="#">Tel Aviv -Yafo, Israel</a></li>
+                <li class="li-bot-border"><a href="#">Tel Aviv -Yafo, Israel</a></li>
+                <li class="li-bot-border"><a href="#">Tel Aviv -Yafo, Israel</a></li>
+               
               </ul>
             </li>
             <li class="dropdown">
@@ -103,9 +109,9 @@
               <span class="glyphicon glyphicon-menu-down"></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="#">The first choice!</a></li>
-                <li><a href="#">And another choice for you.</a></li>
-                <li><a href="#">but wait! A third!</a></li>
+                <li class="li-bot-border"><a href="#"><i class="glyphicon glyphicon-leaf text-green"></i> Grass</a></li>
+                <li class="li-bot-border"><a href="#"><i class="glyphicon glyphicon-leaf text-blue"></i> Arena</a></li>
+                <li class="li-bot-border"><a href="#"><i class="glyphicon glyphicon-leaf text-muted"></i> Asphalt</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -137,12 +143,12 @@
     <div>
       <div class="container-fluid">
         <br/>
-        <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <!--Map code Here-->
           </div>
           <div ng-controller="CarouselDemoCtrl">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12"><br />
+              <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div id="myCarousel1" class="carousel slide" data-ride="carousel">
                   <!-- Wrapper for slides -->
@@ -182,7 +188,7 @@
                 <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
                 <span class="text-muted pull-left">Street Address 25/31 </span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
-                <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
+                <span class="text-muted"> 5x5 </span><span class="text-muted" class="text-green"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
                   <div star-rating rating-value="rating.current" max="rating.max" ></div>
               </span>
@@ -226,7 +232,7 @@
                 <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
                 <span class="text-muted pull-left">Street Address 25/31 </span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
-                <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
+                <span class="text-muted"> 5x5 </span><span class="text-muted" class="text-green"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
                   <div star-rating rating-value="rating.current" max="rating.max" ></div>
               </span>
@@ -270,12 +276,13 @@
                 <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
                 <span class="text-muted pull-left">Street Address 25/31</span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
-                <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
+                <span class="text-muted"> 5x5 </span><span class="text-muted" class="text-green"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
                   <div star-rating rating-value="rating.current" max="rating.max" ></div>
               </span> <br /><br />
               </div>
-
+              </div>
+              <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div id="myCarousel7" class="carousel slide" data-ride="carousel">
                   <!-- Wrapper for slides -->
@@ -315,7 +322,7 @@
                 <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
                 <span class="text-muted">Street Address 25/31 </span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
-                <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
+                <span class="text-muted"> 5x5 </span><span class="text-muted" class="text-green"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
                   <div star-rating rating-value="rating.current" max="rating.max" ></div>
               </span>
@@ -359,7 +366,7 @@
                 <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
                 <span class="text-muted pull-left">Street Address 25/31</span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
-                <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
+                <span class="text-muted"> 5x5 </span><span class="text-muted" class="text-green"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
                   <div star-rating rating-value="rating.current" max="rating.max" ></div>
               </span>
@@ -403,11 +410,13 @@
                 <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
                 <span class="text-muted">Street Address 25/31 </span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
-                <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
+                <span class="text-muted"> 5x5 </span><span class="text-muted" class="text-green"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
                   <div star-rating rating-value="rating.current" max="rating.max" ></div>
               </span> <br /><br />
               </div>
+              </div>
+              <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div id="myCarousel4" class="carousel slide" data-ride="carousel">
                   <!-- Wrapper for slides -->
@@ -447,7 +456,7 @@
                 <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
                 <span class="text-muted">Street Address 25/31</span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
-                <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
+                <span class="text-muted"> 5x5 </span><span class="text-muted" class="text-green"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
                   <div star-rating rating-value="rating.current" max="rating.max" ></div>
               </span>
@@ -490,7 +499,7 @@
                 </div>
                 <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
                 <span class="text-muted">Street Address 25/31</span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
-                <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
+                <span class="text-muted"> 5x5 </span><span class="text-muted" class="text-green"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
                   <div star-rating rating-value="rating.current" max="rating.max" ></div>
               </span>
@@ -533,15 +542,16 @@
                 <h5 style="margin-bottom: 0px;"><b>Goal Time, TLV</b></h5>
                 <span class="text-muted">Street Address 25/31</span><span class="text-muted pull-right"><img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/>&nbsp;<img src="img/soccer-black.png"/></span><br/>
 
-                <span class="text-muted"> 5x5 </span><span class="text-muted" style="color: green;"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
+                <span class="text-muted"> 5x5 </span><span class="text-muted" class="text-green"> Grass <i class="glyphicon glyphicon-leaf"></i></span>
                 <span ng-repeat="rating in ratings">
                   <div star-rating rating-value="rating.current" max="rating.max" ></div>
               </span>
               </div>
+              </div>
             </div>
 
           </div>
-        </div>
+        
       </div>
     </div><br /><br /><br />
     <footer id="footer" class="footer">
